@@ -2,190 +2,171 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Lobby</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lobby</title>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div>
+  <header class="navbar">
+    <div class="header">
+      <img id="logo" src="./img/brasao lobby.png" alt="Logo lobby">
+      <nav class="nav-links">
+        <a href="">A Lan House</a>
+        <a href="">Planos</a>
+        <a href="">Fale Conosco</a>
+      </nav>
+    </div>
+  </header>
 
-            <img src="./img/brasao lobby.png" alt="Logo lobby">
+  <main>
 
-            <a href="">A Lan</a>
-            <a href="">Planos</a>
-            <a href="">Fale conosco</a>
+    <div class="pai">
+      <img id="clientesJogando" src="./img/clientes jogando.png" alt="clientes jogando na lan house">
+      <h1 id="textoCima">A única Lan House Medieval do Recife</h1>
+      <h3 id="textoMeio">Venha jogar aquela gameplay avançada e evoluir suas mecânicas com equipamentos de alto desempenho!</h3>
+      <button id="butaoConheca">CONHEÇA OS PLANOS</button>
+    </div>
 
-        </div>
-    </header>
+    <div class="rainha">
+      <div class="rainhaTexto">
+        <h1 id="tituloTag">RAINHA NO LOBBY</h1>
+        <h1 id="tituloPrincipal">Faça sua Reserva</h1>
+        <p>Reserve agora mesmo a sua rainha no Lobby, nossa rainha começa às 22 horas e termina às 6 da manhã, rainha todos os dias, exceto domingos que fechamos às 22:00.</p>
+        <button>Reserve aqui!</button>
+      </div>
+      <div class="rainhaImg">
+        <img src="./img/cliente concentrada.png" alt="Cliente concentrada">
+      </div>
+    </div>
 
-    <main>
-        <div class="pai">
-            <img src="./img/clientes jogando.png" alt="clientes jogando na lan house">
-            <h1>A única Lan House Cyberpunk do Recife</h1>
-            <h3>Venha bater aquela gameplay avançada e evoluir suas mecânicas com equipamentos de alto desempenho!</h3>
-            <button>CONHEÇA OS PLANOS</button>
-        </div>
+    <div class="container">
+      <p>Os lobby's</p>
+      <h2>Os cavalos são algo que levamos a sério!</h2>
+      <h3>Conheça nossos equipamentos:</h3>
 
-        <div>
+      <div class="flex-item">
 
-            <p><strong>Corujão no lobby</strong></p>
-            <h2>Faça sua Reserva</h2>
-            <img src="./img/cliente concentrada.png" alt="Cliente concentrada">
-            <p>Reserve agora mesmo o seu corujão no Lobby, nosso corujão começa às 22 horas e termina às 6 da manhã,
-                corujão todos os dias, exceto domingos que fechamos às 22:00. </p>
-            <button>Reserve aqui!</button>
-        </div>
-
-        <div class="container">
-            <p>Os lobby's</p>
-            <h2>Os cavalos são algo que levamos a sério!</h2>
-            <h3><span>Conheça nossos equipamentos:</span></h3>
-
-            <div class="item">
-                
-                <h4>Setup Escudeiro</h4>
-                <img src="" alt="Especificações Técnicas">
-  
-                <ul>
-                    <li>i7 8700
-                        Vídeo RTX 2070
-                        SSD 240 GB
-                        ASUS TUF B360M Plus Gaming
-                        16 Gb RAM Corsair 3.000Mhz</li>
-
-                    <img src="" alt="Monitor e Cadeira">
-                    <li>Monitor Benq ZOWIE XL2546 240Hz Dyac
-                        Cadeiras Gamer DT3 Elise</li>
-
-                    <img src="" alt="Periféricos">
-                    <li>Mouse Zowie ZA12
-                        HeadSet HyperX Cloud Alpha
-                        Teclado Mecânico</li>
-
-                    <img src="" alt="Horários">
-                    <li>Todos os dias
-                        10:00 am - 06:00 am
-                        Exceto Domingo, fechamos às 22:00.</li>
-
-                    <img src="" alt="Valores">
-                    <li>Avulso: R$ 14,00 <br>
-                        Pacote 3 horas: R$ 36,00<br>
-                        Pacote 6 horas: R$ 70,00<br>
-                        Pacote 8 horas: R$ 90,00<br>
-                        Corujão: R$ 115,00</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <h4>Setup Paladino</h4>
-                <ul>
-                    <img src="" alt="Especificações Técnicas">
-                    <li>i9 11900
-                        Vídeo RTX 4070
-                        SSD M2 1TB
-                        ASUS TUF B650M Plus Gaming
-                        32 Gb RAM HyperX 3.600Mhz</li>
-
-                    <img src="" alt="Monitor e Cadeira">
-                    <li>Monitor Benq ZOWIE XL2546k 240Hz Dyac+
-                        Cadeiras Gamer DT3 Elise</li>
-
-                    <img src="" alt="Periféricos">
-                    <li>Mouse Zowie ZA12
-                        HeadSet Zeus Pro 7.1
-                        Teclado Mecânico</li>
-
-                    <img src="" alt="Horários">
-                    <li>Todos os dias
-                        10:00 am - 06:00 am
-                        Exceto Domingo, fechamos às 22:00.</li>
-
-                    <img src="" alt="Valores">
-                    <li>Avulso: R$ 16,00 <br>
-                        Pacote 3 horas: R$ 45,00 <br>
-                        Pacote 6 horas: R$ 85,00 <br>
-                        Pacote 8 horas: R$ 110,00 <br>
-                        Corujão: R$ 130,00</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <h4>Setup Rei</h4>
-                <ul>
-                    <img src="" alt="Especificações Técnicas">
-                    <li>i7 14700
-                        Vídeo RTX 5060
-                        SSD M2 2TB
-                        ASUS Prime B750M
-                        32 Gb RAM 5.600Mhz DDR5</li>
-
-                    <img src="" alt="Monitor e Cadeira">
-                    <li>Monitor Benq ZOWIE XL2566x+ 400Hz Dyac2
-                        Cadeiras Gamer DT3 Elise</li>
-
-                    <img src="" alt="Periféricos">
-                    <li>Mouse Zowie ZA12
-                        HeadSet Zeus Pro 7.1
-                        Teclado Mecânico</li>
-
-                    <img src="" alt="Horários">
-                    <li>Todos os dias
-                        10:00 am - 06:00 am
-                        Exceto Domingo, fechamos às 22:00.</li>
-
-                    <img src="" alt="Valores">
-                    <li>Avulso: R$ 18,00 <br>
-                        Pacote 3 horas: R$ 50,00 <br>
-                        Pacote 6 horas: R$ 95,00 <br>
-                        Pacote 8 horas: R$ 125,00 <br>
-                        Corujão: R$ 150,00</li>
-                </ul>
-            </div>
-            <button><strong>Reserve já!</strong></button>
-        </div>
-        <div></div>
-        <div>
-            <p>
-                siga nossas redes sociais
-            </p>
-            <img src="" alt="" id="redesSociais"></img>
+        <div class="item">
+          <h4>Setup Plebeu</h4>
+          <ul>
+            <li>i7 8700</li>
+            <li>Vídeo RTX 2070</li>
+            <li>SSD 240 GB</li>
+            <li>ASUS TUF B360M Plus Gaming</li>
+            <li>16 Gb RAM Corsair 3.000Mhz</li>
+            <li>Monitor Benq ZOWIE XL2546 240Hz Dyac</li>
+            <li>Cadeiras Gamer DT3 Elise</li>
+            <li>Mouse Zowie ZA12</li>
+            <li>HeadSet HyperX Cloud Alpha</li>
+            <li>Teclado Mecânico</li>
+            <li>Todos os dias — 10:00 am às 06:00 am (exceto domingos até 22:00)</li>
+            <li class="valores">
+              Avulso: R$ 14,00<br>
+              Pacote 3h: R$ 36,00<br>
+              Pacote 6h: R$ 70,00<br>
+              Pacote 8h: R$ 90,00<br>
+              Corujão: R$ 115,00</li>
+          </ul>
         </div>
 
-        <div></div>
-
-        <div>
-            <p>Zona sul da Terra do Nunca</p>
-            <h3>Venha dar respawn</h3>
-            <img src="" alt="Relogio">
-            <p><strong>10:00 AM até 06:00 AM (todos os dias), exceto domingos até às 22:00.</strong></p>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303489.3797842228!2d-34.996621521874985!3d-7.655274300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab5d004c0c1c77%3A0x154f87328daaef0c!2sNeverland!5e1!3m2!1spt-BR!2sbr!4v1779246583661!5m2!1spt-BR!2sbr"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <img src="" alt="Telefone">
-            <p>(81) 9 81234-5678</p>
-            <img src="" alt="Email">
-            <p>contato@lobby.com.br</p>
-            <img src="" alt="Endereco">
-            <p>Rua Imaginarium dos Montes Árabes, 910</p>
-            <p>CEP 11121-314</p>
-            <p>Neverland - JA</p>
+        <div class="item">
+          <h4>Setup Cavaleiro</h4>
+          <ul>
+            <li>i9 11900</li>
+            <li>Vídeo RTX 4070</li>
+            <li>SSD M2 1TB</li>
+            <li>ASUS TUF B650M Plus Gaming</li>
+            <li>32 Gb RAM HyperX 3.600Mhz</li>
+            <li>Monitor Benq ZOWIE XL2546k 240Hz Dyac+</li>
+            <li>Cadeiras Gamer DT3 Elise</li>
+            <li>Mouse Zowie ZA12</li>
+            <li>HeadSet Zeus Pro 7.1</li>
+            <li>Teclado Mecânico</li>
+            <li>Todos os dias — 10:00 am às 06:00 am (exceto domingos até 22:00)</li>
+            <li class="valores">
+              Avulso: R$ 16,00<br>
+              Pacote 3h: R$ 45,00<br>
+              Pacote 6h: R$ 85,00<br>
+              Pacote 8h: R$ 110,00<br>
+              Corujão: R$ 130,00</li>
+          </ul>
         </div>
-    </main>
 
-    <footer>
-        <div>
-
+        <div class="item">
+          <h4>Setup Rei</h4>
+          <ul>
+            <li>i7 14700</li>
+            <li>Vídeo RTX 5060</li>
+            <li>SSD M2 2TB</li>
+            <li>ASUS Prime B750M</li>
+            <li>32 Gb RAM 5.600Mhz DDR5</li>
+            <li>Monitor Benq ZOWIE XL2566x+ 400Hz Dyac2</li>
+            <li>Cadeiras Gamer DT3 Elise</li>
+            <li>Mouse Zowie ZA12</li>
+            <li>HeadSet Zeus Pro 7.1</li>
+            <li>Teclado Mecânico</li>
+            <li>Todos os dias — 10:00 am às 06:00 am (exceto domingos até 22:00)</li>
+            <li class="valores">
+              Avulso: R$ 18,00<br>
+              Pacote 3h: R$ 50,00<br>
+              Pacote 6h: R$ 95,00<br>
+              Pacote 8h: R$ 125,00<br>
+              Corujão: R$ 150,00</li>
+          </ul>
         </div>
-    </footer>
 
+      </div>
+    
+    </div>
 
-    <script src="./script.js"></script>
+      <button class="btnReserva">Reserve já!</button>
+    </section>
+
+    <section class="redesSociais">
+      <p>Siga nossas redes sociais</p>
+      <img src="" alt="Redes Sociais" id="redesSociais">
+    </section>
+
+    <section class="contato">
+      <div class="contatoTexto">
+        <p class="contatoTag">Zona sul da Terra do Nunca</p>
+        <h3>Venha dar respawn</h3>
+        <div class="contato-info">
+          <img src="" alt="Relógio">
+          <p>10:00 AM até 06:00 AM (todos os dias), exceto domingos até às 22:00.</p>
+        </div>
+        <div class="contatoInfo">
+          <img src="" alt="Telefone">
+          <p>(81) 9 81234-5678</p>
+        </div>
+        <div class="contatoInfo">
+          <img src="" alt="Email">
+          <p>contato@lobby.com.br</p>
+        </div>
+        <div class="contatoInfo">
+          <img src="" alt="Endereço">
+          <p>Rua Imaginarium dos Montes Árabes, 910 — CEP 11121-314 — Neverland, JA</p>
+        </div>
+      </div>
+      <div class="contato-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303489.3797842228!2d-34.996621521874985!3d-7.655274300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab5d004c0c1c77%3A0x154f87328daaef0c!2sNeverland!5e1!3m2!1spt-BR!2sbr!4v1779246583661!5m2!1spt-BR!2sbr"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Lobby. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
