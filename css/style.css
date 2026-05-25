@@ -46,11 +46,11 @@ body {
   color: #a08040;
 }
 
-.pai {
+.hero {
   position: relative;
 }
 
-.pai #clientesJogando {
+#hero-imagem {
   width: 100%;
   height: 520px;
   object-fit: cover;
@@ -58,7 +58,7 @@ body {
   filter: brightness(0.4) sepia(0.2);
 }
 
-.pai h1 {
+#hero-titulo {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -68,10 +68,10 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 50px;
   color: #e8b84b;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.8);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
 }
 
-.pai h3 {
+#hero-subtitulo {
   position: absolute;
   top: 62%;
   left: 50%;
@@ -81,10 +81,14 @@ body {
   font-size: 25px;
   font-style: italic;
   color: #e0d6c2;
-  text-shadow: 0 1px 10px rgba(0,0,0,0.9);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
 }
 
-.pai button {
+span {
+  color: #9b6e04;
+}
+
+#hero-botao {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -99,12 +103,12 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 
-.pai button:hover {
+#hero-botao:hover {
   background: #8a5e14;
   color: #fff;
 }
 
-.rainha {
+.banner-reserva {
   display: flex;
   align-items: center;
   gap: 48px;
@@ -113,11 +117,11 @@ body {
   padding: 72px 32px;
 }
 
-.rainhaTexto {
+.banner-reserva-texto {
   flex: 1;
 }
 
-#tituloTag {
+.banner-reserva-tag {
   font-family: 'Cinzel', serif;
   font-size: 12px;
   font-weight: bold;
@@ -126,21 +130,21 @@ body {
   margin-bottom: 8px;
 }
 
-#tituloPrincipal {
+.banner-reserva-titulo {
   font-family: 'Cinzel', serif;
   font-size: 2.5rem;
   color: #81652e;
   margin: 0 0 20px;
 }
 
-.rainhaTexto p {
+.banner-reserva-texto p {
   color: #9a8f78;
   font-style: italic;
   margin-bottom: 28px;
   line-height: 1.6;
 }
 
-.rainhaTexto button {
+.banner-reserva-texto button {
   background: #6b1a1a;
   color: #e0d6c2;
   border: 1px solid #a02222;
@@ -149,23 +153,26 @@ body {
   padding: 12px 36px;
   cursor: pointer;
   transition: background 0.2s;
+  text-transform: uppercase;
 }
 
-.rainhaTexto button:hover {
+.banner-reserva-texto button:hover {
   background: #a02222;
+  background: #e8b84b;
+  color: #000000;
 }
 
-.rainhaImg {
+.banner-reserva-imagem {
   flex: 1;
 }
 
-.rainhaImg img {
+.banner-reserva-imagem img {
   width: 100%;
   border: 1px solid #3a3028;
   filter: brightness(0.85) sepia(0.1);
 }
 
-.container {
+.planos-container {
   background: #4e0808;
   border-top: 2px solid #8a5e14;
   border-bottom: 2px solid #8a5e14;
@@ -173,35 +180,35 @@ body {
   text-align: center;
 }
 
-.container > p {
+.planos-tag {
   font-family: 'Cinzel', serif;
   font-size: 13px;
   color: #a08040;
   margin-bottom: 12px;
 }
 
-.container > h2 {
+.planos-titulo {
   font-family: 'Cinzel', serif;
   font-size: 1.9rem;
   color: #e0d6c2;
   margin-bottom: 8px;
 }
 
-.container > h3 {
+.planos-subtitulo {
   font-size: 1rem;
   font-style: italic;
   color: #a08040;
   margin-bottom: 48px;
 }
 
-.flex-item {
+.planos-lista {
   display: flex;
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.item {
+.plano-item {
   flex: 1;
   min-width: 260px;
   max-width: 320px;
@@ -213,11 +220,11 @@ body {
   transition: border-top-color 0.2s;
 }
 
-.item:hover {
+.plano-item:hover {
   border-top-color: #e8b84b;
 }
 
-.item h4 {
+.plano-item h4 {
   font-family: 'Cinzel', serif;
   font-size: 0.95rem;
   color: #e8b84b;
@@ -227,27 +234,27 @@ body {
   border-bottom: 1px solid #3a3028;
 }
 
-.item ul {
+.plano-item ul {
   list-style: none;
   padding: 0;
 }
 
-.item li {
+.plano-item li {
   color: #9a8f78;
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 8px;
 }
 
-.item li.valores {
+.plano-valores {
   color: #e0d6c2;
   border-top: 1px solid #3a3028;
   padding-top: 16px;
-  margin-top: 8px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
-.btnReserva {
+.planos-botao-reserva {
   display: block;
   margin: 48px auto 0;
   background: #6b1a1a;
@@ -258,13 +265,15 @@ body {
   padding: 14px 48px;
   cursor: pointer;
   transition: background 0.2s;
+  text-transform: uppercase;
 }
 
-.btnReserva:hover {
-  background: #a02222;
+.planos-botao-reserva:hover {
+  background: #e8b84b;
+  color: #000000;
 }
 
-.redesSociais {
+.redes-sociais {
   text-align: center;
   padding: 48px 32px;
   font-family: 'Cinzel', serif;
@@ -281,49 +290,109 @@ body {
   padding: 72px 32px;
 }
 
-.contatoTexto {
+.contato-texto {
   flex: 1;
 }
 
-.contatoTag {
+.contato-tag {
   font-family: 'Cinzel', serif;
   font-size: 13px;
   color: #a08040;
   margin-bottom: 8px;
 }
 
-.contatoTexto h3 {
+.contato-texto h3 {
   font-family: 'Cinzel', serif;
   font-size: 1.9rem;
   color: #81652e;
   margin-bottom: 32px;
 }
 
-.contatoInfo img {
+.contato-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.contato-info img {
   width: 20px;
   height: 20px;
   object-fit: contain;
 }
 
-.contatoInfo p {
+.contato-info p {
   color: #9a8f78;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
-.contatoInfo, p {
-  color: #9a8f78;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.contatoMapa {
+.contato-mapa {
   flex: 1;
 }
 
-.contatoMapa iframe {
+.contato-mapa iframe {
   width: 100%;
   border: 1px solid #3a3028;
+}
+
+.pai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+
+}
+
+.boasVindas img {
+  width: 100%;
+  height: 300px;
+  padding: 24px 16px;
+  object-fit: contain;
+  border-radius: 750px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #6b1a1a;
+  background-color: #e0d6c2;
+  border-radius: 6px;
+
+}
+
+input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #6b1a1a;
+  border-radius: 7px;
+  font-size: 1rem;
+  background-color: #e0d6c2;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #69542a;
+
+
+}
+
+select {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 8px 3px 8px 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 80px;
+  color: #69542a;
+
 }
 
 .footer {
@@ -334,4 +403,4 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 12px;
   color: #69542a;
-} 
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="header">
+            <a href="./index.html"><img id="logo" src="./img/brasao lobby.png" alt="Logo lobby"></a>
+            <nav class="nav-links">
+                <a href="">A Lan House</a>
+                <a href="./forms.html">Planos</a>
+                <a href="">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="pai">
+            <form action="/adicionarDados" method="post" class="form">
+
+                <div class="boasVindas">
+                    <img src="./img/cavaleiro dando boas vindas.png" alt="Cavaleiro acenando">
+                </div>
+
+                <div id="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="">
+
+                </div>
+                <div>
+                    <label for="numero">
+                        Número de celular:
+                        <select class="dropdown-btn">
+                            <option value="81">PE (81)</option>
+                            <option value="71">BA (71)</option>
+                            <option value="85">CE (85)</option>
+                            <option value="98">MA (98)</option>
+                            <option value="83">PB (83)</option>
+                            <option value="84">RN (84)</option>
+                            <option value="79">SE (79)</option>
+                            <option value="82">AL (82)</option>
+                        </select>
+                    </label>
+                    <input type="tel" name="" id="numeroCelular">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="" id="email">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="" id="senha">
+                </div>
+
+                <div>
+                    <label for="enviar"></label>
+                    <input type="submit" name="" id="enviar">
+                </div>
+
+                
+                <p>Já tem uma conta no Lobby? <a href="">Entre com seu cavalo.</a></p>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Lobby. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

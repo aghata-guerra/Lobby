@@ -12,10 +12,10 @@
 
   <header class="navbar">
     <div class="header">
-      <img id="logo" src="./img/brasao lobby.png" alt="Logo lobby">
+      <a href="./index.html"><img id="logo" src="./img/brasao lobby.png" alt="Logo lobby"></a>
       <nav class="nav-links">
         <a href="">A Lan House</a>
-        <a href="">Planos</a>
+        <a href="./forms.html">Planos</a>
         <a href="">Fale Conosco</a>
       </nav>
     </div>
@@ -23,33 +23,36 @@
 
   <main>
 
-    <div class="pai">
-      <img id="clientesJogando" src="./img/clientes jogando.png" alt="clientes jogando na lan house">
-      <h1 id="textoCima">A única Lan House Medieval do Recife</h1>
-      <h3 id="textoMeio">Venha jogar aquela gameplay avançada e evoluir suas mecânicas com equipamentos de alto desempenho!</h3>
-      <button id="butaoConheca">CONHEÇA OS PLANOS</button>
-    </div>
+    <section class="hero">
+      <img id="hero-imagem" src="./img/clientes jogando.png" alt="Clientes jogando na lan house">
+      <h1 id="hero-titulo">A única Lan House Medieval do Recife</h1>
+      <h3 id="hero-subtitulo">Venha jogar aquela gameplay avançada e evoluir suas mecânicas com equipamentos de alto
+        desempenho!</h3>
+      <button id="hero-botao">CONHEÇA OS PLANOS</button>
+    </section>
 
-    <div class="rainha">
-      <div class="rainhaTexto">
-        <h1 id="tituloTag">RAINHA NO LOBBY</h1>
-        <h1 id="tituloPrincipal">Faça sua Reserva</h1>
-        <p>Reserve agora mesmo a sua rainha no Lobby, nossa rainha começa às 22 horas e termina às 6 da manhã, rainha todos os dias, exceto domingos que fechamos às 22:00.</p>
+    <section class="banner-reserva">
+      <div class="banner-reserva-texto">
+        <h1 class="banner-reserva-tag">RAINHA DA NOITE NO LOBBY</h1>
+        <h1 class="banner-reserva-titulo">Faça sua Reserva</h1>
+        <p>Reserve agora mesmo a sua rainha no Lobby, nossa rainha começa <span>às 22 horas</span> e termina <span>às 6
+            da manhã</span>, rainha
+          todos os dias, exceto domingos que fechamos <span>às 22:00</span>.</p>
         <button>Reserve aqui!</button>
       </div>
-      <div class="rainhaImg">
+      <div class="banner-reserva-imagem">
         <img src="./img/cliente concentrada.png" alt="Cliente concentrada">
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <p>Os lobby's</p>
-      <h2>Os cavalos são algo que levamos a sério!</h2>
-      <h3>Conheça nossos equipamentos:</h3>
+    <section class="planos-container">
+      <p class="planos-tag">Os lobby's</p>
+      <h2 class="planos-titulo">Os cavalos são algo que levamos a sério!</h2>
+      <h3 class="planos-subtitulo">Conheça nossos equipamentos:</h3>
 
-      <div class="flex-item">
+      <div class="planos-lista">
 
-        <div class="item">
+        <div class="plano-item">
           <h4>Setup Plebeu</h4>
           <ul>
             <li>i7 8700</li>
@@ -63,16 +66,20 @@
             <li>HeadSet HyperX Cloud Alpha</li>
             <li>Teclado Mecânico</li>
             <li>Todos os dias — 10:00 am às 06:00 am (exceto domingos até 22:00)</li>
-            <li class="valores">
-              Avulso: R$ 14,00<br>
-              Pacote 3h: R$ 36,00<br>
-              Pacote 6h: R$ 70,00<br>
-              Pacote 8h: R$ 90,00<br>
-              Corujão: R$ 115,00</li>
+            <div class="plano-valores">
+              <ul>
+                <li>
+                  Avulso: R$ 14,00<br>
+                  Pacote 3h: R$ 36,00<br>
+                  Pacote 6h: R$ 70,00<br>
+                  Pacote 8h: R$ 90,00<br>
+                  Corujão: R$ 115,00</li>
+              </ul>
+            </div>
           </ul>
         </div>
 
-        <div class="item">
+        <div class="plano-item">
           <h4>Setup Cavaleiro</h4>
           <ul>
             <li>i9 11900</li>
@@ -86,7 +93,7 @@
             <li>HeadSet Zeus Pro 7.1</li>
             <li>Teclado Mecânico</li>
             <li>Todos os dias — 10:00 am às 06:00 am (exceto domingos até 22:00)</li>
-            <li class="valores">
+            <li class="plano-valores">
               Avulso: R$ 16,00<br>
               Pacote 3h: R$ 45,00<br>
               Pacote 6h: R$ 85,00<br>
@@ -95,7 +102,7 @@
           </ul>
         </div>
 
-        <div class="item">
+        <div class="plano-item">
           <h4>Setup Rei</h4>
           <ul>
             <li>i7 14700</li>
@@ -109,7 +116,7 @@
             <li>HeadSet Zeus Pro 7.1</li>
             <li>Teclado Mecânico</li>
             <li>Todos os dias — 10:00 am às 06:00 am (exceto domingos até 22:00)</li>
-            <li class="valores">
+            <li class="plano-valores">
               Avulso: R$ 18,00<br>
               Pacote 3h: R$ 50,00<br>
               Pacote 6h: R$ 95,00<br>
@@ -119,38 +126,45 @@
         </div>
 
       </div>
-    
-    </div>
 
-      <button class="btnReserva">Reserve já!</button>
+      <button class="planos-botao-reserva">Reserve já!</button>
     </section>
 
-    <section class="redesSociais">
+    <section class="redes-sociais">
       <p>Siga nossas redes sociais</p>
-      <img src="" alt="Redes Sociais" id="redesSociais">
+      <img src="" alt="Redes Sociais">
     </section>
 
     <section class="contato">
-      <div class="contatoTexto">
-        <p class="contatoTag">Zona sul da Terra do Nunca</p>
+
+      <div class="contato-texto">
+
+        <p class="contato-tag">Zona sul da Terra do Nunca</p>
+
         <h3>Venha dar respawn</h3>
+
         <div class="contato-info">
           <img src="" alt="Relógio">
           <p>10:00 AM até 06:00 AM (todos os dias), exceto domingos até às 22:00.</p>
         </div>
-        <div class="contatoInfo">
+
+        <div class="contato-info">
           <img src="" alt="Telefone">
           <p>(81) 9 81234-5678</p>
         </div>
-        <div class="contatoInfo">
+
+        <div class="contato-info">
           <img src="" alt="Email">
           <p>contato@lobby.com.br</p>
         </div>
-        <div class="contatoInfo">
+
+        <div class="contato-info">
           <img src="" alt="Endereço">
           <p>Rua Imaginarium dos Montes Árabes, 910 — CEP 11121-314 — Neverland, JA</p>
         </div>
+
       </div>
+
       <div class="contato-mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303489.3797842228!2d-34.996621521874985!3d-7.655274300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab5d004c0c1c77%3A0x154f87328daaef0c!2sNeverland!5e1!3m2!1spt-BR!2sbr!4v1779246583661!5m2!1spt-BR!2sbr"
@@ -158,6 +172,7 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
+
     </section>
 
   </main>
