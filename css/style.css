@@ -9,6 +9,15 @@ body {
   font-size: 18px;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #69542a;
+  cursor: pointer;
+}
+
 .navbar {
   background-color: #fff;
   border-bottom: 2px solid #8a5e14;
@@ -431,9 +440,25 @@ select {
   color: #69542a;
 }
 
-@media (max-width: 600px) {
-  .elemento {
-    width: 100%;
-    background-color: lightblue;
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; 
   }
-}   
+
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    padding: 16px;
+    border-top: 2px solid #8a5e14;
+  }
+
+  .nav-links.aberto {
+    display: flex; 
+  }
+}
