@@ -88,7 +88,7 @@ span {
   color: #9b6e04;
 }
 
-#hero-botao {
+#heroBotao {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -101,11 +101,6 @@ span {
   padding: 12px 36px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
-}
-
-#hero-botao:hover {
-  background: #8a5e14;
-  color: #fff;
 }
 
 .banner-reserva {
