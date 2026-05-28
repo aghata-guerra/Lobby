@@ -49,6 +49,7 @@ body {
  
 .hero {
   position: relative;
+  text-align: center;
 }
  
 #hero-imagem {
@@ -61,24 +62,27 @@ body {
  
 #hero-titulo {
   position: absolute;
-  top: 40%;
+  top: 32%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 80%;
+  transform: translateX(-50%);
+
+  width: 85%;
+
   font-family: 'Cinzel', serif;
   font-size: 50px;
   color: #e8b84b;
+
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
 }
  
 #hero-subtitulo {
   position: absolute;
-  top: 62%;
+  top: 58%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 60%;
+  transform: translateX(-50%);
+
+  width: 75%;
+
   font-size: 25px;
   font-style: italic;
   color: #e0d6c2;
@@ -94,13 +98,18 @@ span {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+
   background: transparent;
   color: #e8b84b;
   border: 1px solid #8a5e14;
+
   font-family: 'Cinzel', serif;
   font-size: 13px;
+
   padding: 12px 36px;
+
   cursor: pointer;
+
   transition: background 0.2s, color 0.2s;
 }
  
@@ -429,10 +438,6 @@ select {
   color: #69542a;
 }
  
-/* ============================================================
-   RESERVA
-   ============================================================ */
- 
 .reserva-container {
   max-width: 600px;
   margin: 60px auto;
@@ -576,6 +581,25 @@ select {
 @media (max-width: 600px) {
   .elemento {
     width: 100%;
-    background-color: lightblue;
+
+    text-align: center;
+
   }
-}
+
+  #hero-titulo {
+    top: 28%;
+    font-size: 32px;
+    width: 90%;
+  }
+
+  #hero-subtitulo {
+    top: 52%;
+    font-size: 16px;
+    width: 85%;
+  }
+
+  #hero-botao {
+    bottom: 35px;
+    font-size: 12px;
+    padding: 10px 24px;
+  }

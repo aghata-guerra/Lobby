@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #69542a;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 2px solid #8a5e14;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 32px;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #69542a;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #a08040;
+}
+
+.pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+
+}
+
+.boasVindas img {
+    width: 100%;
+    height: 300px;
+    padding: 24px 16px;
+    object-fit: contain;
+    border-radius: 750px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #8a5e14;
+    background-color: #e0d6c2;
+    border-radius: 6px;
+    border-top: 3px solid #8a5e14;
+    padding: 24px;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #6b1a1a;
+    border-radius: 7px;
+    font-size: 1rem;
+    background-color: #d1c3b7;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    color: #69542a;
+}
+
+select {
+    border: 1px solid #6b1a1a;
+    border-radius: 7px;
+    padding: 8px 3px 10px 1px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 80px;
+    color: #69542a;
+    background-color: #d1c3b7;
+}
+
+.footer {
+    background: #6b1a1a;
+    border-top: 2px solid #3a3028;
+    text-align: center;
+    padding: 24px 32px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    color: #69542a;
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        padding: 16px;
+        border-top: 2px solid #8a5e14;
+    }
+
+    .nav-links.aberto {
+        display: flex;
+    }
+}
+
+.senha-container {
+    position: relative;
+    width: 100%;
+}
+
+#senha {
+    width: 100%;
+    padding: 10px 45px 10px 14px;
+    border: 1px solid #6b1a1a;
+    border-radius: 7px;
+    font-size: 1rem;
+    background-color: #d1c3b7;
+}
+
+#mostrarSenha {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+#erroSenha {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+
+        display: none;
+
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 100px;
+
+        left: 0;
+
+        width: 100%;
+
+        background-color: #ffffff;
+
+        padding: 20px;
+
+        gap: 20px;
+
+        z-index: 999;
+
+        border-top: 2px solid #8a5e14;
+
+    }
+
+    .nav-links.aberto {
+
+        display: flex;
+
+    }
+
+    .nav-links a {
+
+        font-size: 18px;
+
+        padding: 10px 0;
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+}
