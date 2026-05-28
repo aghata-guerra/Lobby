@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <title>Lobby</title>
 </head>
-
 <body>
-
   <header class="navbar">
     <div class="header">
       <a href="./index.html"><img id="logo" src="./img/brasao lobby.png" alt="Logo lobby"></a>
@@ -23,24 +20,22 @@
   </header>
 
   <main>
-
     <section class="hero">
       <img id="hero-imagem" src="./img/clientes jogando.png" alt="Clientes jogando na lan house">
       <h1 id="hero-titulo">A única Lan House Medieval do Recife</h1>
-      <h3 id="hero-subtitulo">Venha jogar aquela gameplay avançada e evoluir suas mecânicas com equipamentos de alto
-        desempenho!</h3>
-      <button id="hero-botao">CONHEÇA OS PLANOS</button>
+      <h3 id="hero-subtitulo">Venha jogar aquela gameplay avançada e evoluir suas mecânicas com equipamentos de alto desempenho!</h3>
+      <button id="hero-botao" onclick="window.location.href='./forms.html'" >CONHEÇA OS PLANOS</button>
     </section>
 
     <section class="banner-reserva">
       <div class="banner-reserva-texto">
         <h1 class="banner-reserva-tag">RAINHA DA NOITE NO LOBBY</h1>
         <h1 class="banner-reserva-titulo">Faça sua Reserva</h1>
-        <p>Reserve agora mesmo a sua rainha no Lobby, nossa rainha começa <span>às 22 horas</span> e termina <span>às 6
-            da manhã</span>, rainha
-          todos os dias, exceto domingos que fechamos <span>às 22:00</span>.</p>
-        <button>Reserve aqui!</button>
+        <p>Reserve agora mesmo a sua rainha no Lobby, nossa rainha começa <span>às 22 horas</span> e termina <span>às 6 da manhã</span>, rainha todos os dias, exceto domingos que fechamos <span>às 22:00</span>.</p>
+
+        <button onclick="window.location.href='./forms.html'">Reserve aqui!</button>
       </div>
+
       <div class="banner-reserva-imagem">
         <img src="./img/cliente concentrada.png" alt="Cliente concentrada">
       </div>
@@ -50,9 +45,8 @@
       <p class="planos-tag">Os lobby's</p>
       <h2 class="planos-titulo">Os cavalos são algo que levamos a sério!</h2>
       <h3 class="planos-subtitulo">Conheça nossos equipamentos:</h3>
-
       <div class="planos-lista">
-
+        <a href="./forms.html">
         <div class="plano-item">
           <h4>Setup Plebeu</h4>
           <ul>
@@ -76,6 +70,7 @@
           </ul>
         </div>
 
+        <a href="./forms.html">
         <div class="plano-item">
           <h4>Setup Cavaleiro</h4>
           <ul>
@@ -99,6 +94,7 @@
           </ul>
         </div>
 
+        <a href="./forms.html">
         <div class="plano-item">
           <h4>Setup Rei</h4>
           <ul>
@@ -121,41 +117,30 @@
               Corujão: R$ 150,00</li>
           </ul>
         </div>
-
       </div>
-
-      <button class="planos-botao-reserva">Reserve já!</button>
+      <button class="planos-botao-reserva" onclick="window.location.href='./forms.html'">Reserve já!</button>
     </section>
 
-
     <section class="redes-sociais">
-
-      <div>
+      <div >
         <h2>Siga nossas redes sociais</h2>
         <p class="nome">Aghata Guerra</p>
         <a href="https://www.instagram.com/_aghata_christie_/">
           <img src="./img/instagram.svg" alt="Redes Sociais" id="instagram">
-
         </a>
-
         <p class="nome">Jamilly Rejane</p>
         <a href="https://www.instagram.com/jamyrs2/">
           <img src="./img/instagram.svg" alt="Redes Sociais" id="instagram">
-
         </a>
       </div>
-
     </section>
+
     <div id="divisao"></div>
 
-    <section class="contato" id="contato">
-
+    <section class="contato">
       <div class="contato-texto">
-
         <p class="contato-tag">Zona sul da Terra do Nunca</p>
-
         <h3>Venha dar respawn</h3>
-
         <div class="contato-info">
           <img src="./img/relogio.svg" alt="Relógio">
           <p>10:00 AM até 06:00 AM (todos os dias), exceto domingos até às 22:00.</p>
@@ -185,16 +170,12 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-
     </section>
-
   </main>
 
   <footer class="footer">
     <p>© 2026 Lobby. Todos os direitos reservados.</p>
   </footer>
-
-  <script src="./js/script.js"></script>
+  <script src="./script.js"></script>
 </body>
-
 </html>

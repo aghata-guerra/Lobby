@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva — Lobby</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="header">
+      <a href="./index.html"><img id="logo" src="./img/brasao lobby.png" alt="Logo lobby"></a>
+      <nav class="nav-links">
+        <a href="./index.html">A Lan House</a>
+        <a href="./forms.html">Planos</a>
+        <a href="">Fale Conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reserva-container">
+    <p class="reserva-tag">QUASE LÁ, CAVALEIRO</p>
+    <h1 class="reserva-titulo">Finalize sua Reserva</h1>
+
+    <div class="reserva-secao">
+      <h3>1. Escolha o Setup</h3>
+      <div class="plano-opcoes">
+        <div class="plano-opcao">
+          <input type="radio" name="plano" id="plebeu" value="Plebeu">
+          <label for="plebeu">Setup Plebeu</label>
+          <span>R$ 14,00/h</span>
+        </div>
+        <div class="plano-opcao">
+          <input type="radio" name="plano" id="cavaleiro" value="Cavaleiro">
+          <label for="cavaleiro">Setup Cavaleiro</label>
+          <span>R$ 16,00/h</span>
+        </div>
+        <div class="plano-opcao">
+          <input type="radio" name="plano" id="rei" value="Rei">
+          <label for="rei">Setup Rei</label>
+          <span>R$ 18,00/h</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="reserva-secao">
+      <h3>2. Forma de Pagamento</h3>
+      <div class="pagamento-opcoes">
+        <div class="pagamento-opcao">
+          <input type="radio" name="pagamento" id="pix" value="Pix">
+          <label for="pix">Pix</label>
+        </div>
+        <div class="pagamento-opcao">
+          <input type="radio" name="pagamento" id="credito" value="Crédito">
+          <label for="credito">Cartão de Crédito</label>
+        </div>
+        <div class="pagamento-opcao">
+          <input type="radio" name="pagamento" id="debito" value="Débito">
+          <label for="debito">Cartão de Débito</label>
+        </div>
+        <div class="pagamento-opcao">
+          <input type="radio" name="pagamento" id="dinheiro" value="Dinheiro">
+          <label for="dinheiro">Dinheiro</label>
+        </div>
+      </div>
+    </div>
+
+    <button class="reserva-botao" onclick="confirmarReserva()">Confirmar Reserva</button>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Lobby. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function confirmarReserva() {
+      const plano = document.querySelector('input[name="plano"]:checked');
+      const pagamento = document.querySelector('input[name="pagamento"]:checked');
+
+      if (!plano) {
+        alert("Escolha um setup antes de continuar.");
+        return;
+      }
+
+      if (!pagamento) {
+        alert("Escolha uma forma de pagamento.");
+        return;
+      }
+
+      alert("Reserva confirmada! Setup " + plano.value + " — Pagamento via " + pagamento.value + ". Até já, cavaleiro!");
+      window.location.href = "./index.html";
+    }
+  </script>
+
+</body>
+</html>
