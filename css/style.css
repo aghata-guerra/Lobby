@@ -57,6 +57,7 @@ body {
 
 .hero {
   position: relative;
+  text-align: center;
 }
 
 #hero-imagem {
@@ -67,34 +68,38 @@ body {
   filter: brightness(0.4) sepia(0.2);
 }
 
+/* TÍTULO */
 #hero-titulo {
   position: absolute;
-  top: 40%;
+  top: 32%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 80%;
+  transform: translateX(-50%);
+
+  width: 85%;
+
   font-family: 'Cinzel', serif;
   font-size: 50px;
   color: #e8b84b;
+
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
 }
 
+/* SUBTÍTULO */
 #hero-subtitulo {
   position: absolute;
-  top: 62%;
+  top: 58%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 60%;
+  transform: translateX(-50%);
+
+  width: 75%;
+
   font-size: 25px;
   font-style: italic;
   color: #e0d6c2;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
-}
 
-span {
-  color: #9b6e04;
+  line-height: 1.5;
+
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
 }
 
 #hero-botao {
@@ -102,15 +107,25 @@ span {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+
   background: transparent;
   color: #e8b84b;
   border: 1px solid #8a5e14;
+
   font-family: 'Cinzel', serif;
   font-size: 13px;
+
   padding: 12px 36px;
+
   cursor: pointer;
+
   transition: background 0.2s, color 0.2s;
 }
+
+span {
+  color: #9b6e04;
+}
+
 
 #hero-botao:hover {
   background: #8a5e14;
@@ -442,23 +457,71 @@ select {
 
 
 @media (max-width: 768px) {
+
   .menu-toggle {
-    display: block; 
+    display: block;
   }
 
   .nav-links {
-    display: none; 
+
+    display: none;
+
     flex-direction: column;
+
     position: absolute;
-    top: 80px;
-    right: 0;
-    background: #fff;
+
+    top: 100px;
+
+    left: 0;
+
     width: 100%;
-    padding: 16px;
+
+    background-color: #ffffff;
+
+    padding: 20px;
+
+    gap: 20px;
+
+    z-index: 999;
+
     border-top: 2px solid #8a5e14;
+
   }
 
   .nav-links.aberto {
-    display: flex; 
+
+    display: flex;
+
   }
+
+  .nav-links a {
+
+    font-size: 18px;
+
+    padding: 10px 0;
+
+    width: 100%;
+
+    text-align: center;
+
+  }
+
+  #hero-titulo {
+    top: 28%;
+    font-size: 32px;
+    width: 90%;
+  }
+
+  #hero-subtitulo {
+    top: 52%;
+    font-size: 16px;
+    width: 85%;
+  }
+
+  #hero-botao {
+    bottom: 35px;
+    font-size: 12px;
+    padding: 10px 24px;
+  }
+
 }

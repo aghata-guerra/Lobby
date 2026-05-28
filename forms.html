@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 
 <body>
     <header class="navbar">
         <div class="header">
             <a href="./index.html"><img id="logo" src="./img/brasao lobby.png" alt="Logo lobby"></a>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
             <nav class="nav-links">
                 <a href="./index.html">A Lan House</a>
                 <a href="./forms.html">Planos</a>
@@ -51,9 +52,20 @@
                     <input type="tel" name="" id="numeroCelular">
                 </div>
 
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="" id="email">
+                <div class="campo-senha">
+
+                    <label for="senha">Senha:</label>
+
+                    <div class="senha-container">
+
+                        <input type="password" id="senha">
+
+                        <span id="mostrarSenha">👁</span>
+
+                    </div>
+
+                    <p id="erroSenha"></p>
+
                 </div>
 
                 <div>
@@ -66,7 +78,7 @@
                     <input type="submit" name="" id="enviar">
                 </div>
 
-                
+
                 <p>Já tem uma conta no Lobby? <a href="">Entre com seu cavalo.</a></p>
             </form>
 
